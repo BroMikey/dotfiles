@@ -1,0 +1,70 @@
+{
+    // ================================
+    // VSCode Vim 插件设置 此配置必须写入全局设置中才能生效
+    // ================================
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "k",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "$"
+            ]
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-c": false,
+        "<C-v": false,
+        "<C-z>": false,
+        "<C-x>": false,
+        "<C-w>": false
+    },
+    // 允许 VSCode Vim 访问系统剪贴板
+    "vim.useSystemClipboard": true,
+    // 光标样式更接近 Vim
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.normal": "block",
+    // leader key 设置（如果需要）
+    "vim.leader": " ",
+    // 自动补全括号 VSCode 自带，保持开启即可
+    "editor.autoClosingBrackets": "always",
+    // 语法高亮 VSCode 自带（无需额外设置）
+    "editor.semanticHighlighting.enabled": true,
+    // 格式化（VSCode 自带，绑定在 keybindings.json 里）
+    "editor.formatOnSave": true,
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontsize": 19,
+    "editor.fontLigatures": true,
+    "editor.tabSize": 4,
+    "editor.colortheme": "One Dark Pro Darker",
+    "vim.smartRelativeLine": true
+}
