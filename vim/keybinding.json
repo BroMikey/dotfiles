@@ -95,5 +95,36 @@
         "key": "r",
         "command": "renameFile",
         "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "editor.action.clipboardCopyAction",
+        "when": "editorTextFocus && editorHasSelection"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "editor.action.clipboardCopyAction",
+        "args": {
+            "wholeLine": true
+        },
+        "when": "editorTextFocus && !editorHasSelection && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "editor.action.clipboardCutAction",
+        "when": "editorTextFocus && editorHasSelection"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "editor.action.clipboardCutAction",
+        "args": {
+            "wholeLine": true
+        },
+        "when": "editorTextFocus && !editorHasSelection && (vim.mode == 'Normal' vim.mode == 'Visual')"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "editor.action.clipboardPasteAction",
+        "when": "editorTextFocus"
     }
 ]
