@@ -10,11 +10,6 @@
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
     },
     {
-        "key": "ctrl+up",
-        "command": "-selectPrevSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
-    },
-    {
         "key": "alt+]",
         "command": "editor.action.marker.next",
         "when": "editorFocus"
@@ -62,11 +57,22 @@
     },
     {
         "key": "ctrl+shift+h",
+        "command": "workbench.action.focusSideBar",
+        "when": "!sideBarVisible"
+    },
+    {
+        "key": "ctrl+shift+h",
         "command": "workbench.action.toggleSidebarVisibility"
+        ,"when": "sideBarVisible"
+    },{
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.focusAuxiliaryBar",
+        "when": "!auxiliaryBarVisible"
     },
     {
         "key": "ctrl+shift+l",
         "command": "workbench.action.toggleAuxiliaryBar"
+        ,"when": "auxiliaryBarVisible"
     },
     {
         "key": "ctrl+shift+j",
